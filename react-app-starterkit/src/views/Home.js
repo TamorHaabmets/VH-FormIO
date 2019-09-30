@@ -20,7 +20,7 @@ const Home = class extends Component {
               { (auth.user && auth.user.data) ?
                 (
                   <h3>
-                    You are logged in as&nbsp;
+                    Oled sisselogitud, kui &nbsp;
                     <strong>{ auth.user.data.email }</strong>
                     !
                   </h3>

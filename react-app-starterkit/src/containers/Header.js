@@ -46,6 +46,7 @@ const Header = class extends Component {
             { auth.authenticated ? (
               <li className="nav-item">
                 <span className="nav-link" role="navigation link" onClick={logout}>
+                   <strong>{ auth.user.data.email } </strong>
                   <span className="fa fa-sign-out" />&nbsp;
                   Logout
                 </span>

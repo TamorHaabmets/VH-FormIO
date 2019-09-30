@@ -6,8 +6,9 @@ import Home from './views/Home'
 import Form from './views/Form'
 import Event from './views/Event'
 import Auth from './views/Auth/Auth'
-import { AppConfig } from './config';
+import { AppConfig } from './config'
 import Demographics from './views/Demographics'
+import Dashboard from './views/Dashboard'
 
 const App = () => (
   <div>
@@ -23,6 +24,7 @@ const App = () => (
       <Route path="/event" component={Event} />
       <Route path="/auth" component={Auth} />
       <Route path="/demographics" component={Demographics} />
+      <Route path="/dashboard" component={Dashboard} />
     </div>
 
     <Footer />

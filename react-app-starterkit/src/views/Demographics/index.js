@@ -11,7 +11,7 @@ const Demographics = class  extends Component {
 
     return (
       <div>
-        <h3>New Form</h3>
+        <h3>TEST</h3>
         <Form
           src={"https://wauvrnyktlmhhfa.form.io/demographics"}
           options={{...{template: 'bootstrap3', iconset: 'fa'},  ...options}}
