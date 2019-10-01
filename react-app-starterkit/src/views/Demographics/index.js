@@ -9,7 +9,7 @@ const Demographics = class  extends Component {
 
     return (
       <div>
-        <h3>Paik 1 küsimustik</h3>
+        <h1 class="center">Paik 1 küsimustik</h1>
         <Form src={"https://wauvrnyktlmhhfa.form.io/paik1"}/>
       </div>
     );
