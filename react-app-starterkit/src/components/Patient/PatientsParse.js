@@ -20,7 +20,8 @@ class PatientsParse extends Component {
           return (
             <div>
               <script>{url = url + frm._id}</script>
-              <Link to={"patients/"+frm._id} class="btn btn-link" role="button">{frm.data.Nimi}</Link>
+              <Link to={"/patients/"+frm._id} class="btn btn-primary" role="button" >{frm.data.Nimi}</Link>      
+              <br/><br/>
             </div>
           );
         });
@@ -31,11 +32,10 @@ class PatientsParse extends Component {
   render() {
     return (
       <div>
-        <h2>Patsiendid</h2>
+        <h2>Patsiendid</h2><br/>
           <div>{this.state.forms}</div>
       </div>
     );
   }
 }
-
 export default PatientsParse;
