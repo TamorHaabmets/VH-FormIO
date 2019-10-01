@@ -15,6 +15,7 @@ class Patient extends Component {
     )
       .then(results => {
         return results.json();
+      
       })
       .then(data => {
         let forms = Object.keys(data.data).map(key => {
@@ -22,12 +23,11 @@ class Patient extends Component {
             return (
               <h3>
                 <p>
-                  {key} : {data.data[key]}
+                  {key.charAt(0).toUpperCase()+key.substring(1)}: {data.data[key]}
                 </p>
               </h3>
             );
           }
-          
         });
 
         this.setState({ p: forms });
@@ -37,6 +37,7 @@ class Patient extends Component {
     return <div>
     {this.state.p}
     <Link to={"../"} class="btn btn-secondary" role="button">Tagasi</Link>
+     &nbsp;
     <Link to={"../../form/"} class="btn btn-primary" role="button">Kinnita</Link>
     </div>;
   }

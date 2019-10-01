@@ -24,24 +24,25 @@ const Header = class extends Component {
           </Link>
           <ul className="nav navbar-nav mr-auto">
             <NavLink exact to="/" role="navigation button" className="nav-link">
-              <span className="fa fa-home" />
+              <span className="fa fa-home" />&nbsp;
+              Esileht
             </NavLink>
             { (auth.is.hasOwnProperty('administrator') && auth.is.administrator) ? (
               <NavLink to="/form" role="navigation link" className="nav-link">
                 <i className="fa fa-wpforms"></i>&nbsp;
-                Forms
+                Küsimustikud
               </NavLink>
             ) : null }
             { auth.authenticated ? (
               <NavLink to="/event" role="navigation link" className="nav-link">
                 <i className="fa fa-calendar"></i>&nbsp;
-                Events
+                Kalender
               </NavLink>
             ) : null }
             { auth.authenticated ? (
             <NavLink to="/patients" role="navigation link" className="nav-link">
-              <span className="fa fa-users" />
-              Patients
+              <span className="fa fa-users" />&nbsp;
+              Patsiendid
             </NavLink>
              ) : null }
           </ul>
