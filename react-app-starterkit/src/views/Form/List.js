@@ -29,6 +29,9 @@ const List = class extends Component {
           getForms={getForms}
         />
         <Link className="btn btn-primary" to="/form/create"><i className="fa fa-plus"></i> Create Form</Link>
+        <br/>
+        <br/>
+        <Link className="btn btn-primary" to="/demographics"><i className="fa fa-info"></i> Paik 1</Link>
       </div>
     )
   }

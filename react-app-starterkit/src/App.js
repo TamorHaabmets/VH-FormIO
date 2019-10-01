@@ -9,7 +9,8 @@ import Auth from './views/Auth/Auth'
 import { AppConfig } from './config'
 import Demographics from './views/Demographics'
 import Dashboard from './views/Dashboard'
-import FormsParse from './components/PatientsParse'
+import PatientsParse from './components/Patient/PatientsParse'
+import Patient from './components/Patient/View'
 
 const App = () => (
   <div>
@@ -26,7 +27,8 @@ const App = () => (
       <Route path="/auth" component={Auth} />
       <Route path="/demographics" component={Demographics} />
       <Route path="/dashboard" component={Dashboard} />
-      <Route path="/patients" component={FormsParse} />
+      <Route path="/patients" component={PatientsParse} />
+      <Route path="/patients/:id" component={Patient}/>
     </div>
 
     <Footer />

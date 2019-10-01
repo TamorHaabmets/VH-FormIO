@@ -6,16 +6,11 @@ import { getForm, getSubmission } from 'react-formio';
 
 const Demographics = class  extends Component {
   render() {
-    const {
-      options    } = this.props;
 
     return (
       <div>
-        <h3>TEST</h3>
-        <Form
-          src={"https://wauvrnyktlmhhfa.form.io/demographics"}
-          options={{...{template: 'bootstrap3', iconset: 'fa'},  ...options}}
-        />
+        <h3>Paik 1 küsimustik</h3>
+        <Form src={"https://wauvrnyktlmhhfa.form.io/paik1"}/>
       </div>
     );
   }
@@ -23,7 +18,7 @@ const Demographics = class  extends Component {
 
 const mapStateToProps = () => {
   return {
-    src: AppConfig.projectUrl + '/Demographics'
+    src: AppConfig.projectUrl + '/Paik1'
   };
 }
 

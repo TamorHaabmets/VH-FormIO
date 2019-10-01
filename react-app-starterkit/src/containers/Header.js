@@ -38,9 +38,12 @@ const Header = class extends Component {
                 Events
               </NavLink>
             ) : null }
-            <NavLink to="/demographics" role="navigation button" className="nav-link">
-              <span className="fa fa-home" />
+            { auth.authenticated ? (
+            <NavLink to="/patients" role="navigation link" className="nav-link">
+              <span className="fa fa-users" />
+              Patients
             </NavLink>
+             ) : null }
           </ul>
           <ul className="nav navbar-nav ml-auto">
             { auth.authenticated ? (
