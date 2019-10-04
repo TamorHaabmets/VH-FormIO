@@ -23,36 +23,29 @@ const Header = class extends Component {
             <img className="logo" alt="Form.io" src="https://portal.form.io/images/formio-logo.png" height="25px" />
           </Link>
           <ul className="nav navbar-nav mr-auto">
-            <NavLink exact to="/" role="navigation button" className="nav-link">
-              <span className="fa fa-home" />&nbsp;
-              Esileht
-            </NavLink>
-            { (auth.is.hasOwnProperty('administrator') && auth.is.administrator) ? (
-              <NavLink to="/form" role="navigation link" className="nav-link">
-                <i className="fa fa-wpforms"></i>&nbsp;
-                Küsimustikud
-              </NavLink>
-            ) : null }
-            { auth.authenticated ? (
-              <NavLink to="/event" role="navigation link" className="nav-link">
-                <i className="fa fa-calendar"></i>&nbsp;
-                Kalender
-              </NavLink>
-            ) : null }
-            { auth.authenticated ? (
+            
+          { auth.authenticated ? (
             <NavLink to="/patients" role="navigation link" className="nav-link">
               <span className="fa fa-users" />&nbsp;
               Patsiendid
             </NavLink>
              ) : null }
+
+            { auth.authenticated ? (
+              <NavLink to="/form" role="navigation link" className="nav-link">
+                <i className="fa fa-wpforms"></i>&nbsp;
+                Küsimustikud
+              </NavLink>
+            ) : null }
+
           </ul>
           <ul className="nav navbar-nav ml-auto">
             { auth.authenticated ? (
               <li className="nav-item">
-                <span className="nav-link" role="navigation link" onClick={logout}>
+                <span className="nav-link-loginout" role="navigation link" onClick={logout}>
                    <strong>{ auth.user.data.email } </strong>
                   <span className="fa fa-sign-out" />&nbsp;
-                  Logout
+                  <span className="nav-link-loginout">Logi välja</span>
                 </span>
               </li>
             ) : (

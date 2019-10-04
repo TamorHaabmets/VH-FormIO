@@ -20,7 +20,7 @@ class PatientsParse extends Component {
           return (
             <div>
               <script>{url = url + frm._id}</script>
-              <Link to={"/patients/"+frm._id} class="btn btn-primary" role="button" >{frm.data.Nimi}</Link>      
+              <Link to={"/patients/"+frm._id} class="btn btn-primary" role="button" >{frm.data.Nimi}</Link>
               <br/><br/>
             </div>
           );
@@ -34,6 +34,7 @@ class PatientsParse extends Component {
       <div>
         <h2>Patsiendid</h2><br/>
           <div>{this.state.forms}</div>
+          <div class="fixed">Valige patsient, kelle kohta soovite küsimustikku täita ning seejärel kinnitage oma valik.</div>
       </div>
     );
   }

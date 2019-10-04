@@ -38,6 +38,30 @@ $fa-font-path: '../node_modules/font-awesome/fonts';
 @import '~font-awesome/scss/font-awesome';
 @import '~formiojs/dist/formio.full.css';
 
+div.fixed {
+  position: fixed;
+  top: 50;
+  right: 50px;
+  width: 500px;
+  border: 5px solid #20c997;
+}
+
+.nav-link-loginout{
+  color: #868e96;
+  cursor: pointer;
+  :hover {
+    color: #fff
+  }
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
 .logo {
   height: 1.9em;
 }
