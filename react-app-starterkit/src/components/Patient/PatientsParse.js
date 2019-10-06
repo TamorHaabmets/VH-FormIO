@@ -34,7 +34,7 @@ class PatientsParse extends Component {
       <div>
         <h2>Patsiendid</h2><br/>
           <div>{this.state.forms}</div>
-          <div class="fixed">Valige patsient, kelle kohta soovite küsimustikku täita ning seejärel kinnitage oma valik.</div>
+          <div class="fixed">Valige patsient, kelle kohta soovite küsimustikku täita ning kinnitage patsiendi iski. Seejärel saate valida küsimustikku. Paik küsimustiku korrektseks avamiseks vajutage allpool olevale nupule: Paik 1. </div>
       </div>
     );
   }

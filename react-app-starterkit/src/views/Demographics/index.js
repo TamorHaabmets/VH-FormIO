@@ -24,8 +24,8 @@ const mapStateToProps = () => {
 
 const mapDispatchToProps = (dispatch) => {
   return {
-        getForm: (id) => dispatch(getForm('demographics')),
-        getSubmission: (id) => dispatch(getSubmission('demographics', id))
+        getForm: (id) => dispatch(getForm('paik1')),
+        getSubmission: (id) => dispatch(getSubmission('paik1', id))
   };
 }
 
