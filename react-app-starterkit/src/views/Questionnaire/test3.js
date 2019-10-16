@@ -4,13 +4,13 @@ import { Form } from 'react-formio';
 import {AppConfig} from '../../config';
 import { getForm, getSubmission } from 'react-formio';
 
-const Demographics = class  extends Component {
+const Test3 = class  extends Component {
   render() {
 
     return (
       <div>
-        <h1 class="center">Paik 1 küsimustik</h1>
-        <Form src={"https://wauvrnyktlmhhfa.form.io/paik1"}/>
+        <h1 class="center">Test 3 küsimustik</h1>
+        <Form src={"https://wauvrnyktlmhhfa.form.io/test3"}/>
       </div>
     );
   }
@@ -18,18 +18,18 @@ const Demographics = class  extends Component {
 
 const mapStateToProps = () => {
   return {
-    src: AppConfig.projectUrl + '/Paik1'
+    src: AppConfig.projectUrl + '/Test3'
   };
 }
 
 const mapDispatchToProps = (dispatch) => {
   return {
-        getForm: (id) => dispatch(getForm('demographics')),
-        getSubmission: (id) => dispatch(getSubmission('demographics', id))
+        getForm: (id) => dispatch(getForm('questionnaire')),
+        getSubmission: (id) => dispatch(getSubmission('questionnaire', id))
   };
 }
 
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(Demographics)
+)(Test3)

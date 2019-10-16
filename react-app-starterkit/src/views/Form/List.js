@@ -31,7 +31,10 @@ const List = class extends Component {
         <Link className="btn btn-primary" to="/form/create"><i className="fa fa-plus"></i> Create Form</Link>
         <br/>
         <br/>
-        <Link className="btn btn-primary" to="/demographics"><i className="fa fa-info"></i> Paik 1</Link>
+        <Link className="btn btn-primary" to="/Paik1"><i className="fa fa-info"></i> Paik 1</Link>&nbsp;
+        <Link className="btn btn-primary" to="/Test1"><i className="fa fa-info"></i> Test 1</Link>&nbsp;
+        <Link className="btn btn-primary" to="/Test2"><i className="fa fa-info"></i> Test 2</Link>&nbsp;
+        <Link className="btn btn-primary" to="/Test3"><i className="fa fa-info"></i> Test 3</Link>&nbsp;
       </div>
     )
   }
